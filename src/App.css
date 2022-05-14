@@ -1,38 +1,49 @@
-.App {
+.container {
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  padding: 1%;
+  background-color: blue;
+  background-size: cover;
+}
+
+.shadow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 2%;
+}
+
+.numbers {
+  height: "10%";
+  padding: "3%";
+}
+
+.tickets {
+  background-color: white;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 15px;
+}
+.wheel {
+  transform: translate(0%, 0%);
+  animation: myfirst 1.5s infinite linear;
+}
+
+.circle {
+  width: 9%;
+  height: 6%;
+  border-radius: 55%;
+  color: white;
+  background-color: blue;
+  padding: 2%;
+  margin: 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes myfirst {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
   }
 }
